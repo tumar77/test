@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,800&family=Oswald:wght@200;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/fonticons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <nav class="d-flex justify-content-between align-items-lg-center">
+            <a href="#"><img src="./img/Frame%2014.png" alt=""></a>
+            <ul class="d-flex">
+                <li class="header__item"><a href="#product">Каталог</a></li>
+                <li class="header__item"><a href="#testimonials">Одзывы</a></li>
+                <li class="header__item"><a href="#delivery">Доставка</a></li>
+                <li class="header__item"><a href="#сontact">Контакты</a></li>
+            </ul>
+            <a href="tel:+(996)500548661" class="header__call">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.10881 28.1833C5.97425 25.7688 6.68001 23.3776 7.20605 21.0755C7.70486 18.8942 8.98927 16.9863 10.8224 15.7035C11.4005 15.2986 12.0176 14.9678 12.662 14.7125V11.2865C12.662 10.9079 12.9688 10.6008 13.3474 10.6008H16.3785C16.7571 10.6008 17.0642 10.9079 17.0642 11.2865V14.0874H18.4127V11.2865C18.4127 10.9079 18.7195 10.6008 19.0982 10.6008H21.9578C22.3364 10.6008 22.6433 10.9079 22.6433 11.2865V14.7125C23.2879 14.9678 23.9047 15.2986 24.4828 15.7035C26.3352 16.9999 27.6244 18.9294 28.1128 21.137C28.237 21.698 28.3045 22.0649 28.3643 22.3888C28.4469 22.8371 28.5067 23.1613 28.6797 23.7757C28.7822 24.1402 28.57 24.5189 28.2055 24.6217C27.8412 24.7242 27.4623 24.5119 27.3598 24.1474C27.1694 23.4719 27.1016 23.1036 27.0159 22.6371C26.9582 22.3244 26.8928 21.9704 26.7739 21.4331C26.3598 19.5618 25.2671 17.9259 23.6967 16.8268C22.4176 15.9318 20.9166 15.4586 19.3556 15.4586H15.9499C14.3889 15.4586 12.8876 15.9315 11.6088 16.8268C10.0547 17.9145 8.96577 19.5318 8.54307 21.3813C8.00474 23.7362 7.28376 26.1803 6.39989 28.6458L5.4968 31.1652H29.6114L28.876 28.9809C28.7553 28.622 28.9481 28.2332 29.307 28.1123C29.6658 27.9916 30.0546 28.1847 30.1756 28.5433L31.1922 31.5636C31.2159 31.6341 31.228 31.7081 31.228 31.7826V31.8512C31.2277 32.2299 30.9209 32.5364 30.5425 32.5364H4.52268C4.29944 32.5364 4.09036 32.428 3.96192 32.2456C3.83348 32.063 3.80197 31.8296 3.87727 31.6194L5.10881 28.1833ZM19.7839 14.0986C20.2878 14.1224 20.7853 14.1883 21.2721 14.2949V11.972H19.7839V14.0986ZM14.0332 14.2949C14.5752 14.1763 15.1301 14.108 15.6928 14.0922V11.972H14.0332V14.2949Z"
+                          fill="#FFF8F8"/>
+                    <path d="M0.00167465 10.5565C0.00220871 10.5474 0.00220871 10.5386 0.00327682 10.5298C0.00514603 10.5076 0.00808334 10.486 0.0120888 10.4643C0.0126228 10.4614 0.0128899 10.4587 0.0134239 10.4558C0.0184975 10.4299 0.0251732 10.4045 0.0331841 10.3794C0.0334511 10.3789 0.0334511 10.3784 0.0337181 10.3778C0.070034 10.2657 0.969383 7.6042 4.67787 5.40816C5.00365 5.21536 5.42422 5.32298 5.61728 5.64875C5.81007 5.97453 5.70246 6.3951 5.37669 6.58816C3.40522 7.7556 2.33817 9.06031 1.80438 9.90411H7.88755C8.53884 8.49607 9.94527 7.58097 11.5301 7.58097H23.47C25.0548 7.58097 26.4615 8.49607 27.1125 9.90411H33.2C32.0221 8.03545 28.2049 3.90052 17.5 3.90052C14.8492 3.90052 12.431 4.15713 10.3127 4.66342C9.94447 4.75127 9.57464 4.52403 9.48652 4.1558C9.39867 3.78756 9.62591 3.41773 9.99414 3.32961C12.2166 2.79849 14.7422 2.52933 17.5 2.52933C20.8568 2.52933 23.855 2.9272 26.4108 3.71173C28.4818 4.34752 30.272 5.23806 31.7313 6.35851C34.2723 8.30942 34.9394 10.2942 34.9664 10.3778C34.9666 10.3784 34.9666 10.3789 34.9669 10.3794C34.9749 10.4043 34.9816 10.4296 34.9866 10.4558C34.9872 10.4587 34.9874 10.4619 34.9883 10.4651C34.992 10.4862 34.9952 10.5076 34.9971 10.5295C34.9979 10.5386 34.9979 10.5477 34.9984 10.557C34.9989 10.5679 35 10.5786 35 10.5896V14.2289C35 14.6076 34.6929 14.9146 34.3143 14.9146H26.6458C26.2671 14.9146 25.96 14.6076 25.96 14.2289V10.7057C25.584 9.65284 24.5952 8.95216 23.47 8.95216H11.5301C10.4102 8.95216 9.42537 9.64617 9.04539 10.6902V14.2289C9.04539 14.6076 8.73831 14.9146 8.35966 14.9146H0.685535C0.306889 14.9146 7.24792e-05 14.6076 7.24792e-05 14.2289V10.5896C7.24792e-05 10.5784 0.00114059 10.5674 0.00167465 10.5565ZM27.3315 13.5434H33.6288V11.2753H27.3315V13.5434ZM1.37126 13.5434H7.6742V11.2753H1.37126V13.5434Z"
+                          fill="#FFF8F8"/>
+                    <path d="M22.189 27.9777C21.0267 29.0885 19.4523 29.7719 17.7211 29.7719C14.1531 29.7719 11.2499 26.8687 11.2499 23.3004C11.2499 19.7321 14.1531 16.8292 17.7211 16.8292C19.4285 16.8292 20.9831 17.4941 22.1404 18.578C22.1733 18.6007 22.2048 18.6263 22.2342 18.6557C22.2571 18.6787 22.2774 18.703 22.2964 18.7283C23.4673 19.8998 24.1926 21.5172 24.1926 23.3007C24.1926 24.9784 23.5504 26.5093 22.4993 27.6605C22.4665 27.7291 22.4224 27.7937 22.3658 27.8503C22.3127 27.9035 22.2529 27.9456 22.189 27.9777ZM22.7738 23.9861H21.5837C21.205 23.9861 20.898 23.6793 20.898 23.3007C20.898 22.9218 21.205 22.615 21.5837 22.615H22.7738C22.6489 21.6881 22.2742 20.84 21.7193 20.1399L20.8742 20.9853C20.7404 21.1191 20.565 21.1861 20.3893 21.1861C20.2138 21.1861 20.0384 21.1191 19.9046 20.9853C19.6368 20.7174 19.6368 20.2833 19.9046 20.0157L20.7324 19.1879C20.0624 18.696 19.2686 18.3644 18.4069 18.248V19.4832C18.4069 19.8619 18.1 20.169 17.7211 20.169C17.3425 20.169 17.0357 19.8619 17.0357 19.4832V18.248C16.1646 18.3655 15.3627 18.7027 14.6882 19.2034L15.5435 20.0587C15.8113 20.3262 15.8113 20.7604 15.5435 21.0283C15.4097 21.162 15.2343 21.2291 15.0588 21.2291C14.8834 21.2291 14.7077 21.162 14.5739 21.0283L13.7066 20.161C13.1611 20.8571 12.7926 21.6974 12.6687 22.615H13.8588C14.2375 22.615 14.5445 22.922 14.5445 23.3007C14.5445 23.6793 14.2375 23.9861 13.8588 23.9861H12.6687C12.7851 24.8478 13.1165 25.6417 13.6083 26.3117L14.4425 25.4778C14.7101 25.2102 15.1443 25.2102 15.4121 25.4778C15.6797 25.7456 15.6797 26.1798 15.4121 26.4473L14.5608 27.2986C15.2607 27.8533 16.1088 28.2282 17.0357 28.3531V27.1395C17.0357 26.7608 17.3427 26.4538 17.7214 26.4538C18.1 26.4538 18.4069 26.7608 18.4069 27.1395V28.3531C19.3246 28.2292 20.165 27.8607 20.8608 27.3152L20.0363 26.4903C19.7684 26.2228 19.7684 25.7886 20.0363 25.5208C20.3038 25.2529 20.738 25.2529 21.0058 25.5208L21.8187 26.3336C22.3191 25.6591 22.6563 24.8569 22.7738 23.9861Z"
+                          fill="#FFF8F8"/>
+                    <path d="M17.6527 25.6615C16.2914 25.6615 15.1843 24.5541 15.1843 23.1928C15.1843 21.8318 16.2914 20.7244 17.6527 20.7244C19.0138 20.7244 20.1212 21.8318 20.1212 23.1928C20.1212 24.5541 19.0138 25.6615 17.6527 25.6615ZM17.6527 22.0956C17.0477 22.0956 16.5555 22.588 16.5555 23.1928C16.5555 23.7979 17.0477 24.29 17.6527 24.29C18.2578 24.29 18.75 23.7979 18.75 23.1928C18.75 22.588 18.2578 22.0956 17.6527 22.0956Z"
+                          fill="#FFF8F8"/>
+                    <path d="M8.12359 5.12136C8.01571 5.38812 7.75883 5.55021 7.48753 5.55021C7.40208 5.55021 7.31503 5.53419 7.23091 5.50028C6.87977 5.35822 6.71021 4.95874 6.85227 4.6076L6.86482 4.57662C7.00661 4.22548 7.40608 4.05592 7.75722 4.19771C8.10837 4.3395 8.27793 4.73924 8.13614 5.09039L8.12359 5.12136Z"
+                          fill="#FFF8F8"/>
+                    <path d="M28.7991 27.1125C28.7133 27.1125 28.626 27.0965 28.5416 27.0623C28.1908 26.92 28.0215 26.5202 28.1638 26.1694L28.1763 26.1384C28.3184 25.7875 28.7181 25.6182 29.0693 25.7603C29.4202 25.9026 29.5895 26.3023 29.4471 26.6532L29.4346 26.6842C29.3267 26.951 29.0701 27.1125 28.7991 27.1125Z"
+                          fill="#FFF8F8"/>
+                </svg>
+                + 996500548661 <br>Закзат обратную звонок
+            </a>
+        </nav>
+    </div>
+</header>
+<section id="hero">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <h1 class="hero__title">приготовим <span>низкоколорийный </span> торты через 2 дня только <span>с натуральными ингредиентами</span>
+                </h1>
+
+                <p class="hero__desc">Получите удоволствие от слаткого без вреда для фигуры</p>
+                <a href="#" class="hero__btn">Оставит заявку</a>
+            </div>
+
+            <div class="col-lg-6"><img src="./img/tort_s_yagodami_klubniki_204%201.png" class="hero__img" alt="">
+                <div class="#"><img src="./img/klubnika%203.png" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-xl-3 d-flex">
+                <h1 class="about__num">5</h1>
+                <h2 class="about__title">лет <br>работа</h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xl-3 d-flex">
+                <h1 class="about__num">15</h1>
+                <h2 class="about__title">сотрудников <br> команда </h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xl-3 d-flex">
+                <h1 class="about__num">2000</h1>
+                <h2 class="about__title">доволных <br>клиента</h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xl-3 d-flex">
+                <h1 class="about__num">4500</h1>
+                <h2 class="about__title"> испеченных <br>тортов</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="advantage ">
+    <div class="container">
+
+        <h1 class="title">наши преимущество</h1>
+        <div class="row">
+            <div class="col-lg-6 d-flex ">
+                <img src="./img/19ddb9f03f52b0a0120f54a3b0b17dcb%201.png" alt="">
+                <div class="advantage__box">
+                    <h1 class="advantage__text">состав <br></h1>
+                    <span class="advantage__desc">
+                Готовим  только из свежих и натуралных продуктов .Без ароматизатора и красителя</span>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 d-flex ">
+                <img src="./img/2a.png" alt="">
+                <div class=advantage__"box">
+                    <h1 class="advantage__text">без сахара <br></h1>
+                    <span class="advantage__desc">
+               В из делиях мы заменям сахар  на мед или фруктозу.Блогодаря этому нашы торты низколорийный</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+                <img src="./img/t3.png" alt="">
+                <div class="advantage__box">
+                    <h1 class="advantage__text">индивидувальный дизайн<br></h1>
+                    <span class="advantage__desc">Вы можете заказат торт своего дизайна и мы сделаем его</span>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex ">
+                <img src="./img/moto4.png" alt="">
+                <div class="advantage__box">
+                    <h1 class="advantage__text">быстрая доставка<br></h1>
+                    <span class="advantage__desc">
+               Наша курьер доставит торт через 1-2  дня после закза</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="product">
+    <div class="container">
+        <h1 class="title"> наши продукция</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box1">
+                    <span class="product__left">110ккал/100гр</span>
+                    <span class="product__right">1250грамм</span>
+                    <img class="box_img" src="./img/T%201.png" alt="">
+                    <h4 class="product__title">Торт “Прага”</h4>
+                    <p class="product__desc">Покрытая с шоколадам скромным <br> узорам</p>
+                    <span class="product__num">250 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box1">
+                    <span class="product__left">130ккал/100гр</span>
+                    <span class="product__right">1500грамм</span>
+                    <img class="box_img" src="./img/tort%202.png" alt="">
+                    <h4 class="product__title">Торт “Черничный рай”</h4>
+                    <p class="product__desc">Покрытая с шоколадным кремом украшения с арахисами и декаративными
+                        цветами</p>
+                    <span class="product__num">450 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box1">
+                    <span class="product__left">120ккал/100гр</span>
+                    <span class="product__right">1150грамм</span>
+                    <img class="box_img" src="./img/tort3.png" alt="">
+                    <h4 class="product__title">Торт “Лайм”</h4>
+                    <p class="product__desc">Покрытая с лайм и желе скромным шокаладами</p>
+                    <span class="product__num">500 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div></div>
+                <div class="box1">
+                    <span class="product__left">150ккал/100гр</span>
+                    <span class="product__right">1670грамм</span>
+                    <img class="box_img" src="./img/4-4-1200x1200%201.png" alt="">
+                    <h4 class="product__title">Торт “Ягодный пиражок””</h4>
+                    <p class="product__desc">Покрытая с шоколадам скромным <br> узорам</p>
+                    <span class="product__num">1000 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box1">
+                    <span class="product__left">116ккал/100гр</span>
+                    <span class="product__right">1050грамм</span>
+                    <img class="box_img" src="./img/tort6.png" alt="">
+                    <h4 class="product__title">Торт”Клубничное манго”</h4>
+                    <p class="product__desc">Покрытая с шоколадным кремом украшения с арахисами и декаративными
+                        цветами</p>
+                    <span class="product__num">490 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box1">
+                    <span class="product__left">170ккал/100гр</span>
+                    <span class="product__right">1250грамм</span>
+                    <img class="box_img" src="./img/5%201.png" alt="">
+                    <h4 class="product__title">Торт“Шоколадный с черникой”</h4>
+                    <p class="product__desc">Покрытая с лайм и желе скромным шокаладами</p>
+                    <span class="product__num">850 сом</span>
+                    <a href="#" class="product__btn">Закзать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials">
+    <div class="container">
+        <h1 class="title">отзывы о нас</h1>
+        <div class="slider">
+            <div class="slider__item">
+                <div class="box2">
+                    <img src="./img/Ellipse%2013.png" alt="">
+                    <h3 class="testimonials__title">ак тилек</h3>
+                    <p class="testimonials__desc">Спосибо огромное
+                        сотрудники кондитерской!
+                        Приготовилипросто отличный
+                        торт!На каждый праздник
+                        будем заказатьтолько здес</p>
+                    <ul class="testimonials__items">
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="box2">
+                    <img src="./img/Ellipse%2018.png" alt="">
+                    <h3 class="testimonials__title">нуржамал</h3>
+                    <p class="testimonials__desc">
+                        Проста спасали нас!Заказывалитри торта,приготовилии доставали за 2 дня,как раз
+                        вовремя.Заказываликлубничный идва шоколадных.Все тортыоченьсочные и нежные.Одно значные
+                        рекомендую</p>
+                    <ul class="testimonials__items">
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="box2">
+                    <img src="./img/Ellipse%2019.png" alt="">
+                    <h3 class="testimonials__title">азиза</h3>
+                    <p class="testimonials__desc">
+                        Заказывали “Чернычный рай” к Дню раждения.Доставили быстро и проишествый.
+                        Мне и моей семье очен
+                        понравилос</p>
+                    <ul class="testimonials__items">
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="box2">
+                    <img src="./img/Ellipse%2013.png" alt="">
+                    <h3 class="testimonials__title">ак тилек</h3>
+                    <p class="testimonials__desc">Спосибо огромное
+                        сотрудники кондитерской!
+                        Приготовилипросто отличный
+                        торт!На каждый праздник
+                        будем заказатьтолько здес</p>
+                    <ul class="testimonials__items">
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="box2">
+                    <img src="./img/Ellipse%2013.png" alt="">
+                    <h3 class="testimonials__title">ак тилек</h3>
+                    <p class="testimonials__desc">Спосибо огромное
+                        сотрудники кондитерской!
+                        Приготовилипросто отличный
+                        торт!На каждый праздник
+                        будем заказатьтолько здес</p>
+                    <ul class="testimonials__items">
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+                        <li class="testimonials__items__svg">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                      fill="#FF0E0E"/>
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="delivery">
+    <div class="container">
+        <h1 class="title">доставка</h1>
+        <div class="delivery__row">
+            <div class="delivery__box">
+                <h5 class="delivery__desc">
+                    Доставка осуществляется с 9 :00
+                    до 21:00 каждый день.закз будет
+                    доставлен ,Вам через <span class="delivery__span">1,2 дня</span> после его
+                    оформаления.</h5>
+
+                    <h5 class="delivery__desc"><span  class="delivery__span">Безплатный</span> доставка по городу
+                        Безплатный доставка по городу
+                    независимо от сумму закза.</h5>
+
+                <h5 class="delivery__desc">Оплатить заказ <span class="delivery__span">курьеру</span>
+                    на личьными или по карте .</h5>
+
+                <h5 class="delivery__desc">После заполнения заявку на заказ,Вам
+                    позванит наш оператор уточнить
+                    детали и <span class="delivery__span">подтверждить</span> закз.</h5>
+            </div>
+
+        <div class="delivery__box">
+            <img src="./img/af_delivery%201.png" alt="">
+        </div>
+    </div>
+    </div>
+</section>
+<section id="сontact">
+    <div class="container">
+       <h1 class="title">наша контакты</h1>
+
+    <div class="сontact__row">
+        <div class="сontact__box">
+    <h4 class="сontact__title">адрес:</h4>
+    <p class="сontact__desc"> г. Бишкек улица  Чуй № 125  </p>
+    </div>
+
+    <div class="сontact__box">
+        <h4 class="сontact__title">телефон</h4>
+        <p class="сontact__desc"><a href="tel:+996 (700) 355 248">+996 (700) 355 248</a></p>
+    </div>
+
+        <div class="contact__box">
+            <h4  class="сontact__title">электронный почта</h4>
+            <a href="mailto:nurhamal.damir@mail.ru" class="сontact__desc">nurhamal.damir@mail.ru</a>
+        </div>
+        </div>
+
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <nav class="footer__nav">
+            <a href="#"><img src="./img/Footer16.png" alt=""></a>
+            <ul class="d-flex  footer__menu">
+                <li class="footer__menu__item"><a href="#">каталог</a></li>
+                <li class="footer__menu__item"><a href="#">oдзывы</a></li>
+                <li class="footer__menu__item"><a href="#">доставка</a></li>
+                <li class="footer__menu__item"><a href="#">контакты</a></li>
+            </ul>
+            <ul class="d-flex">
+                <li><a href="#" class="fab fa-instagram footer__link"></a></li>
+                <li><i href="#" class="fas fa-phone footer__link "></i></li>
+                <li><a href="#" class="fab fa-whatsapp footer__link"></a></li>
+                <li><a href="https://google.com" class="fab fa-telegram footer__link"></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <p class="text-center footer__prava">© 2021 Все права защищены.</p>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/main.js">
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
